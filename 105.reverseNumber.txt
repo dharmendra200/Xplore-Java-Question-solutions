@@ -1,0 +1,46 @@
+## Problem Statement
+
+Write a Java program to reverse a given number
+
+### Condition
+
+Input will only be a positive interger and will not have any characters
+
+## Input
+
+    12345
+
+## Output
+
+    54321
+
+
+****************************************************************************************** 
+                                           S-O-L-U-T-I-O-N
+
+\\ Very Easy 
+
+
+
+import java.util.*;
+public class Main{
+   public static void main(String args[]){
+     Scanner sc= new Scanner(System.in);
+     int n=sc.nextInt();
+     
+     int result=0;
+     int temp=n;
+     while(temp>0)
+                  {
+                      int rem= temp%10;
+                      result=result*10+ rem;
+                      temp=temp/10;
+
+                  }
+     
+     System.out.println("You number is: "+n+ "\n");
+     System.out.println("Your reverse number is: "+result);
+     
+       
+   }
+}
